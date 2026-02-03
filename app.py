@@ -192,4 +192,9 @@ def home():
     return render_template("index.html")
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(debug=True)
+=======
+    app.run(debug=True)
+
+>>>>>>> 9dc78c8dbded31de357121d211e441cb2f8522bf
