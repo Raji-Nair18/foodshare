@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FoodShare</title>
+    <link rel="stylesheet" href="/static/css/bitmap.css">
+    <link rel="stylesheet" href="/static/css/darkmode.css">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/available-food">Available Food</a>
+
+    {% if session.get('role') == 'restaurant' %}
+        <a href="/restaurant">Restaurant</a>
+    {% elif session.get('role') == 'delivery' %}
+        <a href="/delivery">Delivery</a>
+    {% elif session.get('role') == 'beneficiary' %}
+        <a href="/beneficiary">Beneficiary</a>
+    {% elif session.get('role') == 'admin' %}
+        <a href="/admin">Admin</a>
+    {% endif %}
+
+    {% if 'user_id' not in session %}
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+    {% else %}
+        <a href="/logout">Logout</a>
+    {% endif %}
+
+    <button onclick="toggleTheme()">🌙</button>
+</nav>
+
+<hr>
+
+{% block content %}{% endblock %}
+
+<script src="/static/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Available Food</h2>
+{% for f in food %}
+<div class="card">
+    <h3>{{ f[1] }} ({{ f[2] }} servings)</h3>
+    <p>Restaurant: {{ f[6] }}</p>
+    <p>Pickup: {{ f[3] }}</p>
+    <p>Expiry: {{ f[4] }}</p>
+    <a href="/collect/{{ f[0] }}">Request Pickup</a>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Restaurant Dashboard</h2>
+<form method="POST">
+    <input name="food_name" placeholder="Food Name">
+    <input type="number" name="quantity" placeholder="Quantity">
+    <input name="pickup_time" placeholder="Pickup Time">
+    <input name="expiry_time" placeholder="Expiry Time">
+    <textarea name="description"></textarea>
+    <button type="submit">Donate</button>
+</form>
+{% endblock %}
