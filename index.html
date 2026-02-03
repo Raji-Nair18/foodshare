@@ -1,23 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>FoodShare | Donate Food</title>
-  <link rel="stylesheet" href="style.css">
+    <title>FoodShare</title>
+     <meta charset="UTF-8">
+    <title>FoodShare | Donate Food, Share Hope</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <h1>🍽️ FoodShare Platform</h1>
 
-<h1 style="text-align:center;margin-top:50px;">
-  FoodShare 🍽️
-</h1>
+    <p>Total Meals: {{ meals }}</p>
+    <p>Total Restaurants: {{ restaurants }}</p>
+    <p>Available Food: {{ available }}</p>
 
-<p style="text-align:center;">
-  Feed Hope. Share Food.
-</p>
+    <hr>
 
+    <a href="/register">Register</a> |
+    <a href="/login">Login</a> |
+    <a href="/available-food">Available Food</a>
+    <!-- HERO SECTION -->
+<section class="hero">
+    <div class="overlay">
+        <h1>Feed Hope. Share Food.</h1>
+        <p>“No one should go hungry when food can be shared.”</p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn primary">Donate Food</a>
+            <a href="#" class="btn secondary">View Available Food</a>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works">
+    <h2>How FoodShare Works</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>🥘 Donate</h3>
+            <p>Restaurants & individuals post surplus food.</p>
+        </div>
+        <div class="step">
+            <h3>🤝 Connect</h3>
+            <p>Volunteers & NGOs get notified instantly.</p>
+        </div>
+        <div class="step">
+            <h3>🚚 Deliver</h3>
+            <p>Food reaches people who need it the most.</p>
+        </div>
+    </div>
+</section>
+
+<!-- QUOTES -->
+<section class="quotes">
+    <h2>Words That Inspire</h2>
+    <p>“A small act of kindness can fill an empty stomach.”</p>
+    <p>“Sharing food is sharing love.”</p>
+</section>
+
+<!-- BLOG SECTION -->
+<section class="blogs">
+    <h2>Our Stories</h2>
+    <div class="blog-cards">
+
+        <div class="blog">
+            <h3>Reducing Food Waste</h3>
+            <p>How surplus food can become someone’s next meal.</p>
+        </div>
+
+        <div class="blog">
+            <h3>Volunteer Diaries</h3>
+            <p>Real stories from volunteers on the ground.</p>
+        </div>
+
+        <div class="blog">
+            <h3>Community Impact</h3>
+            <p>Together we served thousands of meals.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Be a Reason Someone Smiles Today</h2>
+    <a href="#" class="btn primary">Join as Volunteer</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 FoodShare | Feed the Hungry, Reduce Waste</p>
+</footer>
 </body>
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 9dc78c8dbded31de357121d211e441cb2f8522bf
