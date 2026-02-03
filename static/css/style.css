@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #fffaf5;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: url("../images/hero.jpg") center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h1 {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+/* BUTTONS */
+.btn {
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.primary {
+    background-color: #ff6b35;
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    color: #ff6b35;
+}
+
+/* HOW IT WORKS */
+.how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.step {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* QUOTES */
+.quotes {
+    background: #ffefe6;
+    padding: 50px 20px;
+    text-align: center;
+    font-style: italic;
+}
+
+/* BLOGS */
+.blogs {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.blog-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.blog {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 260px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+}
+
+/* CTA */
+.cta {
+    background: #ff6b35;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
